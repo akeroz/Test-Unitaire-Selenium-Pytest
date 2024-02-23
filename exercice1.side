@@ -1,0 +1,180 @@
+{
+  "id": "90a2066b-3df3-47f0-800e-681b3f4a0580",
+  "version": "2.0",
+  "name": "tp2",
+  "url": "https://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Accueil_principal",
+  "tests": [{
+    "id": "bd709b54-bdc7-4f74-aef5-19d125e35575",
+    "name": "Untitled",
+    "commands": [{
+      "id": "e0fdb4fb-320e-4710-8566-57bef6d115b4",
+      "comment": "",
+      "command": "open",
+      "target": "https://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Accueil_principal",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e6983b8b-058c-4a6e-bf1a-a031a9026b89",
+      "comment": "",
+      "command": "store",
+      "target": "Guerre du Viêt Nam — Wikipédia",
+      "targets": [],
+      "value": "title2"
+    }, {
+      "id": "1c0209d9-47b1-42cc-8ace-0e18f0ee6445",
+      "comment": "",
+      "command": "click",
+      "target": "css=#pt-login-2 span",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "23f368ef-53ed-4c66-b9cf-b0ea28176116",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mw-page-container",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b1aeb5b0-ea65-4e55-bb6f-6dd8ee7fe46d",
+      "comment": "",
+      "command": "type",
+      "target": "id=wpName1",
+      "targets": [],
+      "value": "tptest999"
+    }, {
+      "id": "b626be6e-d979-4bf0-8594-144973bab32d",
+      "comment": "",
+      "command": "click",
+      "target": "id=wpPassword1",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a84e4b1d-3dd5-4b17-a2c8-56139754deab",
+      "comment": "",
+      "command": "type",
+      "target": "id=wpPassword1",
+      "targets": [],
+      "value": "tptest9999"
+    }, {
+      "id": "6f0a3df9-9c4a-44d1-8fc1-75808039375b",
+      "comment": "",
+      "command": "click",
+      "target": "id=wpLoginAttempt",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "11b371f5-9241-49e4-9e8c-76514b91355e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cdx-search-input__end-button",
+      "targets": [
+        ["css=.cdx-search-input__end-button", "css:finder"],
+        ["xpath=//form[@id='searchform']/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Rechercher')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d69eacb7-05d9-45ad-b1b2-9450421090ff",
+      "comment": "",
+      "command": "click",
+      "target": "id=ooui-php-1",
+      "targets": [
+        ["id=ooui-php-1", "id"],
+        ["css=#ooui-php-1", "css:finder"],
+        ["xpath=//input[@id='ooui-php-1']", "xpath:attributes"],
+        ["xpath=//div[@id='searchText']/input", "xpath:idRelative"],
+        ["xpath=//div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a08341bb-80ab-4050-b7fa-24bafc3becb9",
+      "comment": "",
+      "command": "type",
+      "target": "id=ooui-php-1",
+      "targets": [
+        ["id=ooui-php-1", "id"],
+        ["css=#ooui-php-1", "css:finder"],
+        ["xpath=//input[@id='ooui-php-1']", "xpath:attributes"],
+        ["xpath=//div[@id='searchText']/input", "xpath:idRelative"],
+        ["xpath=//div/div/div/input", "xpath:position"]
+      ],
+      "value": "guerre du viet nam"
+    }, {
+      "id": "3be2090d-90a9-4403-8146-0efc193c5412",
+      "comment": "",
+      "command": "click",
+      "target": "css=.oo-ui-inputWidget-input > .oo-ui-labelElement-label",
+      "targets": [
+        ["css=.oo-ui-inputWidget-input > .oo-ui-labelElement-label", "css:finder"],
+        ["xpath=//div[@id='mw-search-top-table']/div/div/div/span/span/button/span[2]", "xpath:idRelative"],
+        ["xpath=//button/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5f066bbf-c6fe-4d4d-93a0-3a5b5ae170af",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mw-search-result:nth-child(1) .mw-search-result-heading .searchmatch:nth-child(4)",
+      "targets": [
+        ["css=.mw-search-result:nth-child(1) .mw-search-result-heading .searchmatch:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='mw-content-text']/div[3]/div[4]/ul/li/table/tbody/tr/td[2]/div/a/span[4]", "xpath:idRelative"],
+        ["xpath=//a/span[4]", "xpath:position"],
+        ["xpath=//span[contains(.,'Nam')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "235a61a1-e86e-4423-882e-a01e8665312f",
+      "comment": "",
+      "command": "storeTitle",
+      "target": "",
+      "targets": [],
+      "value": "title"
+    }, {
+      "id": "1e52ae9d-ac75-4d67-90bb-4b5dd8428751",
+      "comment": "",
+      "command": "if",
+      "target": "${title} == ${title2}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3cf0d2d7-ed1d-4af9-ac9f-e218bdcd5e74",
+      "comment": "",
+      "command": "echo",
+      "target": "Recherche Trouvé",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "470299ba-a860-4f6d-8156-6855c1c8c28d",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7588b25b-f8d2-4586-9c3c-20101cf0f481",
+      "comment": "",
+      "command": "click",
+      "target": "id=vector-user-links-dropdown-checkbox",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "da946b1a-bea1-4759-a34d-3d0e02edc26f",
+      "comment": "",
+      "command": "click",
+      "target": "css=#pt-logout span:nth-child(2)",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "ff5f404e-8171-42a4-8d57-e896146f86f0",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["bd709b54-bdc7-4f74-aef5-19d125e35575"]
+  }],
+  "urls": ["https://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Accueil_principal"],
+  "plugins": []
+}
